@@ -61,7 +61,7 @@ app.use(session({
   saveUninitialized: true,
   cookie: {
     httpOnly: true,
-  }
+  },
 }));
 app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
